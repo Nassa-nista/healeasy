@@ -1,0 +1,16 @@
+services:
+  healeasy:
+    build:
+      context: .
+    image: healeasy:staging
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - JWT_SECRET=please_change_me
+      - HEALEASY_DB=/data/healeasy.db
+    volumes:
+      - healeasy-data:/data
+
+volumes:
+  healeasy-data:

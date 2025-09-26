@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+Docker Desktop Installer.exe
+Docker Desktop
+*.md
+.git
+.gitignore
+test
+healeasy.db
+junit.xml
