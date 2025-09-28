@@ -1,16 +1,33 @@
 # HealEasy
 
-HealEasy is a Node.js API for managing users and medications, built with Docker, tested with Jest, and monitored with Prometheus metrics.
+HealEasy is a **Node.js API** for managing users and medications, containerized with **Docker**, tested with **Jest**, and monitored with **Prometheus metrics**.
 
 ---
 
 ## Features
-- User registration & login (`/auth/register`, `/auth/login`)
-- Medication CRUD (`/medications`)
-- Health check endpoint (`/healthz`)
-- Metrics endpoint (`/metrics`) for Prometheus
-- Docker & Docker Compose support
-- SQLite database
+
+- **User Authentication**
+  - Register (`/auth/register`)
+  - Login (`/auth/login`)
+- **Medication CRUD**
+  - Create, Read, Update, Delete at (`/medications`)
+- **Health Check**
+  - `/healthz` endpoint
+- **Monitoring**
+  - `/metrics` endpoint (Prometheus format)
+- **Docker & Docker Compose Support**
+- **SQLite Database**
+
+---
+
+## Tech Stack
+
+- Node.js (v20+)
+- Express.js
+- SQLite (via better-sqlite3)
+- Jest (testing framework)
+- Docker + Docker Compose
+- Prometheus (metrics integration)
 
 ---
 
@@ -18,9 +35,12 @@ HealEasy is a Node.js API for managing users and medications, built with Docker,
 
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) installed
-- Node.js (v20+) if you want to run locally
+- Node.js (v20+) if you want to run locally without Docker
 
-### Run with Docker
+---
+
+## ▶️ Run with Docker
+
 ```bash
 docker compose -f docker-compose.staging.yml up -d
 ---
