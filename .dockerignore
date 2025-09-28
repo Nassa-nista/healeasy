@@ -1,9 +1,7 @@
 node_modules
 npm-debug.log
-healeasy.db
 coverage
-.env
-Dockerfile
-docker-compose.staging.yml
+healeasy.db
 junit.xml
+Docker Desktop.lnk
 Docker Desktop Installer.exe
